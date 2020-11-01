@@ -1,0 +1,157 @@
+<br>
+เครื่องมือแก้ไขเอกสาร ความช่วยเหลือ<br>
+<br>
+<br>
+<br>
+เครื่องมือแก้ไขเอกสาร<br>
+HYPERLINK<br>
+สร้างไฮเปอร์ลิงก์ภายในเซลล์<br>
+<br>
+ตัวอย่างการใช้งาน<br>
+HYPERLINK(&quot;http://www.google.com/&quot;,&quot;Google&quot;)<br>
+<br>
+รูปแบบคำสั่ง<br>
+HYPERLINK(url, [link_label])<br>
+<br>
+url - URL แบบเต็มรูปแบบของตำแหน่งลิงก์ภายในเครื่องหมายอัญประกาศ หรืออ้างอิงไปที่เซลล์ที่มี URL ดังกล่าว<br>
+<br>
+อนุญาตเฉพาะลิงก์บางประเภทเท่านั้น http://, https://, mailto:, aim:, ftp://, gopher://, telnet:// และ news:// ได้รับอนุญาต ส่วนประเภทอื่นๆ จะห้ามใช้อย่างชัดเจน หากระบุโปรโตคอลอื่นไว้ link_label จะปรากฏในเซลล์ แต่จะไม่มีการไฮเปอร์ลิงก์<br>
+<br>
+หากไม่มีการระบุโปรโตคอล ระบบจะถือว่าเป็น http:// และเติมไว้ข้างหน้า url<br>
+<br>
+link_label - [ ไม่บังคับ - url โดยค่าเริ่มต้น ] - ข้อความที่แสดงเป็นลิงก์อยู่ในเซลล์อยู่ภายในเครื่องหมายคำพูด หรืออ้างอิงไปที่เซลล์ที่มีป้ายกำกับดังกล่าว<br>
+<br>
+หาก link_label เป็นอ้างอิงไปยังเซลล์ว่าง url จะแสดงเป็นลิงก์ (หากถูกต้อง) หรือเป็นข้อความธรรมดาในกรณีอื่นๆ<br>
+<br>
+หาก link_label เป็นสตริงว่างเปล่า (&quot;&quot;) เซลล์จะว่างเปล่า แต่ผู้ใช้จะยังเข้าถึงลิงก์นั้นได้โดยการคลิกหรือไปที่เซลล์<br>
+<br>
+หมายเหตุ<br>
+การไม่ได้ระบุ url (หรือ link_label หากระบุ) ไว้ในเครื่องหมายอัญประกาศจะทำให้เกิดข้อผิดพลาด<br>
+<br>
+Google ชีตจะแปลง URL เกือบทุกประเภทที่ถูกต้องโดยอัตโนมัติเมื่อพิมพ์ลงในเซลล์ โดยไม่จำเป็นต้องใช้ฟังก์ชันนี้<br>
+<br>
+ตัวอย่าง<br>
+สร้างไฮเปอร์ลิงก์ภายในเซลล์สำหรับ cell_text ที่ระบุ<br>
+<br>
+<br>
+ทำสำเนา<br>
+<br>
+ข้อมูลนี้มีประโยชน์ไหมใช่ไม่<br>
+เว็บ<br>
+รายการฟังก์ชันของ Google ชีต<br>
+ฟังก์ชัน ENCODEURL<br>
+HYPERLINK<br>
+IMPORTDATA<br>
+IMPORTFEED<br>
+IMPORTHTML<br>
+IMPORTRANGE<br>
+IMPORTXML<br>
+ISURL<br>
+<br>
+Visit the Learning Center<br>
+Using Google products, like Google Docs, at work or school? Try powerful tips, tutorials, and templates. Learn to work on Office files without installing Office, create dynamic project plans and team calendars, auto-organize your inbox, and more.<br>
+<br>
+©2020 Google&nbsp; นโยบายส่วนบุคคล&nbsp; ข้อตกลงการให้บริการ ไทย‎<br>
+<br>
+ส่งความคิดเห็นเกี่ยวกับ...<br>
+เนื้อหาความช่วยเหลือและข้อมูลนี้<br>
+ประสบการณ์การใช้งานศูนย์ช่วยเหลือโดยทั่วไป<br>
+<br>
+{
+  "repository": "pypa/warehouse",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./tests/frontend/setup.js"
+    ],
+    "testRegex": ".*_test.js"
+  },
+  "dependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/polyfill": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/register": "7.6.0",
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "@stimulus/polyfills": "1.1.1",
+    "babel-loader": "8.0.6",
+    "clipboard": "1.7.1",
+    "cookie": "0.4.0",
+    "cssnano": "4.1.10",
+    "date-fns": "1.29.0",
+    "debounce": "1.2.0",
+    "del": "3.0.0",
+    "exports-loader": "0.6.4",
+    "gulp": "^4.0.2",
+    "gulp-brotli": "^3.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-gzip": "1.4.2",
+    "gulp-image": "^6.1.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rev-all": "0.9.8",
+    "gulp-rev-napkin": "0.1.0",
+    "gulp-rtlcss": "^1.4.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.1",
+    "gulp-uglify": "3.0.0",
+    "imports-loader": "0.7.1",
+    "jquery": "3.5.0",
+    "stimulus": "1.1.1",
+    "uglify-js": "3.2.1",
+    "vinyl-named": "1.1.0",
+    "webpack": "^4.42.1",
+    "webpack-stream": "^5.0.0",
+    "whatwg-fetch": "2.0.3",
+    "zopflipng-bin": "5.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "6.2.0",
+    "@testing-library/jest-dom": "4.1.0",
+    "babel-eslint": "8.2.2",
+    "babel-jest": "24.9.0",
+    "eslint": "4.18.2",
+    "jest": "24.9.0",
+    "jest-fetch-mock": "2.1.2",
+    "mutationobserver-shim": "0.3.3",
+    "node-webcrypto-ossl": "1.0.48",
+    "sass-lint": "1.13.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "amd": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
+  }
+}
